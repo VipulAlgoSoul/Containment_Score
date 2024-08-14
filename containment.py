@@ -18,8 +18,8 @@ def interest_zero(s1,s2):
     return intrst_zeros, dc1,dc2
 
 
-def containment_score(str1,str2):
-    
+def containment_score(str1,gtstr):
+    str2 = gtstr
     str_list=[str1,str2]  
 #     print(str_list)
     if len(str1)!=len(str2):
@@ -106,4 +106,4 @@ def containment_score(str1,str2):
     return max(dep_list)/len(s1)
 
 
-containment_score("pool","pooler")
+containment_score("4567","23456789")
